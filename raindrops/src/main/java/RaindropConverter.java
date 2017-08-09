@@ -44,7 +44,7 @@ class RaindropConverter {
         }
 
         if (number % 5 == 0 && number % 7 == 0) {
-            this.reassign("PlangPlong");
+           this.reassign("PlangPlong");
         }
 
         if (number % 3 == 0 && number % 5 == 0 && number % 7 == 0) {
