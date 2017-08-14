@@ -1,15 +1,15 @@
 class DifferenceOfSquaresCalculator {
 
     int computeSquareOfSumTo(int number) {
-        return number;
+        int sumUpToNumber = number * (number + 1) / 2;
+        return (int)Math.pow(sumUpToNumber, 2);
     }
 
-
     int computeSumOfSquaresTo(int number) {
-        return number;
+        return (2 * (int)Math.pow(number, 2) + 3 * number + 1) * number / 6;
     }
 
     int computeDifferenceOfSquares(int number) {
-        return  number;
+        return this.computeSquareOfSumTo(number) - this.computeSumOfSquaresTo(number);
     }
 }
